@@ -30,7 +30,7 @@
  * Free Software Foundation, Inc., 51 Franklin Street, Fifth Floor,
  * Boston, MA 02110-1301, USA
  * 
- * For licensing issues, contact <license@farsiweb.info>.
+ * For licensing issues, contact <fribidi.license@gmail.com>.
  */
 
 #include <common.h>
@@ -424,7 +424,7 @@ main (
 	    S_[sizeof (S_) - 1] = 0;
 	    len = strlen (S_);
 	    /* chop */
-	    if (S_[len - 1] == '\n')
+	    if (len > 0 && S_[len - 1] == '\n')
 	      {
 		len--;
 		S_[len] = '\0';
