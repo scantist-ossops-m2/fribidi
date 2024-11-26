@@ -421,7 +421,7 @@ main (
 	    S_[sizeof (S_) - 1] = 0;
 	    len = strlen (S_);
 	    /* chop */
-	    if (S_[len - 1] == '\n')
+	    if (len > 0 && S_[len - 1] == '\n')
 	      {
 		len--;
 		S_[len] = '\0';
